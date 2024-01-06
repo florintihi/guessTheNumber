@@ -17,10 +17,18 @@
       #number-input {
         border: 2px solid black;
       }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 200px;
+      }
     </style>
   </head>
   <body>
-    <div>
+    <div class="container">
       <label class="label" for="number-input"></label><br />
       <input type="number" id="number-input" /><br />
       <button type="button" class="button">Click!</button>

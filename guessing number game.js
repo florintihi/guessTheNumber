@@ -30,8 +30,11 @@ const guessNumber = () => {
     attemtps++;
     labelText.textContent = `You got it! It was ${answer}! It took you ${attemtps} attempts!`;
     input.style.backgroundColor = "green";
+    setTimeout(redirect, 2000);
   }
 };
 
 button.addEventListener("click", guessNumber);
-button.addEventListener("keydown", guessNumber);
+function redirect() {
+  location.replace("https://www.youtube.com/watch?v=Cp7vgRjhgWc");
+}
